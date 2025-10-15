@@ -34,8 +34,8 @@ Useful during **mobile app pentesting**, **iOS IPA analysis**, or **reverse engi
 Clone or download this script and install dependencies (Python’s built-in modules only — no external installs needed):
 
 ```
-git clone https://github.com/yourusername/plist-decoder.git 
-cd plist-decoder
+git clone https://github.com/yourusername/simple-plist-decoder.git 
+cd simple-plist-decoder
 ```
 
 ---
@@ -44,11 +44,16 @@ cd plist-decoder
 
 Run the script and give it the **folder path** you want to scan:
 ```
-python decode_plists.py /path/to/folder
+python final_plist_decoder_boss /path/to/folder
+```
+or
+```
+chmod +x final_plist_decoder_boss
+./final_plist_decoder_boss /path/to/folder
 ```
 Example:
 ```
-python decode_plists.py extracted_ipa/
+python final_plist_decoder_boss extracted_ipa/
 ```
 ---
 
@@ -77,7 +82,7 @@ python decode_plists.py extracted_ipa/
 Example:
 
 ```
-python decode_plists.py extracted_ipa/ --indent 4
+python final_plist_decoder_boss extracted_ipa/ --indent 4
 ```
 
 ---
